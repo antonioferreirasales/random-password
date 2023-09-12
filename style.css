@@ -1,0 +1,11 @@
+:root {
+  --bgDark: #273549;
+  --bgDivisor: #2F3E53;
+  --whiteText: #FFFFFF;
+  --midGrey: #D5D4D8;
+  --green: #4ADF86;
+  --passwordGreen: #55F991;
+  --bgGreen: #10B981;
+  background-color: var(--bgDark);
+  color: var(--whiteText);
+}
