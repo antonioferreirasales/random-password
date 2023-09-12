@@ -1,0 +1,3 @@
+# Random Password Generator
+## This a [The Fronted Developer Carrer Path](https://scrimba.com/learn/frontend) project from Scrimba.
+In progress...
