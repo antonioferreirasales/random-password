@@ -20,8 +20,16 @@ body {
   font-size: 25.6px;
   width: 880px;
 }
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  font-family: inherit;
+  color: var(--whiteText);
+  font-weight: 500;
+  font-size: inherit;
 }
 
 #hero {
@@ -41,19 +49,18 @@ h1, h2 {
 #subtext {
   margin-top: .625rem;
   font-weight: 400;
+  color: var(--midGrey);
 }
 
 #bttn-panel {
-
   margin: 0 auto;
   border-bottom: .0625rem solid var(--bgDivisor);
   border-radius: .0625rem;
   width: 80%;
   height: 204.8px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #bttn-generate {
@@ -64,6 +71,17 @@ h1, h2 {
   border-radius: .375rem;
   padding: 0.56em 1em 0.56em 1em;
   line-height: 38.4px;
+  margin-bottom: 2.0rem;
+}
+
+#left-panel input {
+  border: none;
+  border-radius: 3px;
+  background-color: var(--bgDivisor);
+  color: var(--passwordGreen);
+  font-family: inherit;
+  margin-top: 2.0rem;
+  padding: 4px 10px;
 }
 
 #bttn-generate:hover {
