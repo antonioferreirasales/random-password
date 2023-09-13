@@ -8,4 +8,89 @@
   --bgGreen: #10B981;
   background-color: var(--bgDark);
   color: var(--whiteText);
+  font-size: 62.5%; /* .625rem */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 25.6px;
+  width: 880px;
+}
+h1, h2 {
+  margin: 0;
+}
+
+#hero {
+  margin-top: 7.1875rem;
+  
+}
+
+#title {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+}
+
+#title span {
+  color: var(--green);
+}
+
+#subtext {
+  margin-top: .625rem;
+  font-weight: 400;
+}
+
+#bttn-panel {
+
+  margin: 0 auto;
+  border-bottom: .0625rem solid var(--bgDivisor);
+  border-radius: .0625rem;
+  width: 80%;
+  height: 204.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#bttn-generate {
+  font-family: inherit;
+  color: var(--whiteText);
+  background-color: var(--bgGreen);
+  border: none;
+  border-radius: .375rem;
+  padding: 0.56em 1em 0.56em 1em;
+  line-height: 38.4px;
+  
+}
+
+#bttn-generate:hover {
+  box-shadow: .25rem .4375rem 1.25rem var(--passwordGreen);
+  cursor: pointer;
+}
+
+#bttn-generate:active {
+  color: var(--bgDark); 
+}
+
+#input {
+  margin-top: 2.18em;
+}
+
+.input-passwords {
+  border: none;
+  border-radius: .375rem;
+  padding: 4px 1rem;
+  width: 21.1rem;
+  height: 3.9rem;
+  background-color: var(--bgDivisor);
+  margin: 0 1.25em;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--passwordGreen);
+  line-height: 3.2rem;
 }

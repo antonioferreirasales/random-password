@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
   </head>
   <body>
     <div id="hero">
-      <h1>Generate a random password</h1>
-      <h2>Never use an insecure password again.</h2>
+      <h1 id="title">Generate a <span>random password</span></h1>
+      <h2 id="subtext">Never use an insecure password again.</h2>
     </div>
-    <div>
-      <button>Generate passwords</button>
+    <div id="bttn-panel">
+      <button id="bttn-generate">Generate passwords</button>
     </div>
     <div id="input">
-      <input type="text" placeholder="Your password will be generated here!">
-      <input type="text" placeholder="Your password will be generated here!">
+      <input class="input-passwords" type="text" placeholder="Your password here!">
+      <input class="input-passwords" type="text" placeholder="Your password here!">
     </div>
     <script src="/main.js"></script>
   </body>
