@@ -16,7 +16,19 @@
       <h2 id="subtext">Never use an insecure password again.</h2>
     </div>
     <div id="bttn-panel">
-      <button id="bttn-generate">Generate passwords</button>
+      <div id="left-panel">
+        <button id="bttn-generate">Generate passwords</button> <br>
+        <h6>Set a password length</h6>
+        <input type="number" name="Password length" id="password-length" min="1" max="12" value="1" required value="">
+      </div>
+      
+      <form>
+        <ul>
+          <li><input type="checkbox" name="character" id="cbx-character">Characters</li>
+          <li><input type="checkbox" name="character" id="cbx-character">Numbers</li>
+          <li><input type="checkbox" name="character" id="cbx-character">Symbols</li>
+        </ul>
+      </form>
     </div>
     <div id="input">
       <input id="password-1" class="input-passwords" type="text" placeholder="Your password here!">

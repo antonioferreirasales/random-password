@@ -3,8 +3,8 @@ const letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
 const characters = [letters, numbers, symbols];
-let passwordLength = 8
-
+let passwordEl = document.querySelector("#password-length")
+let passwordLength = passwordEl.value
 let passwordBox1 = document.querySelector("#password-1")
 let passwordBox2 = document.querySelector("#password-2")
 document.getElementById("bttn-generate").addEventListener("click", outputPassword);
@@ -15,6 +15,7 @@ function randomNumber (numberRange) {
 
 function generatePassword () {
   let password = ""
+  passwordLength = passwordEl.value
   for (let i = 0; i < passwordLength; i++) {
     let pointer = randomNumber(characters.length)
     let characterSet = randomNumber(characters[pointer].length)
